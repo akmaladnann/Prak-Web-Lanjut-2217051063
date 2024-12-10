@@ -67,12 +67,12 @@
             <p class="value"><?= $nama ?></p>
         </div>
         <div class="info">
-            <p class="label">Kelas</p>
-            <p class="value"><?= $kelas ?></p>
-        </div>
-        <div class="info">
             <p class="label">NPM</p>
             <p class="value"><?= $npm ?></p>
+        </div>
+        <div class="info">
+            <p class="label">Kelas</p>
+            <p class="value"><?= $kelas ?></p>
         </div>
     </div>
 
