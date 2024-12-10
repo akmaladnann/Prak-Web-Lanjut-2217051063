@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prak2</title>
+    <title>Prak Web</title>
     <style>
         body {
             margin: 0;
@@ -63,16 +63,16 @@
         <img src="https://i.pinimg.com/736x/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.jpg" alt="Avatar">
         
         <div class="info">
-            <p class="label">Nama</p>
-            <p class="value"><?= $nama ?></p>
+            <p class="label">Nama :</p>
+            <p class="value">{{ $nama }}</p> <!-- Proper width for name field -->
         </div>
         <div class="info">
-            <p class="label">NPM</p>
-            <p class="value"><?= $npm ?></p>
+            <p class="label">NPM    :</p>
+            <p class="value">{{ $npm }}</p> <!-- Proper width for NPM -->
         </div>
         <div class="info">
-            <p class="label">Kelas</p>
-            <p class="value"><?= $kelas ?></p>
+            <p class="label">Kelas :</p>
+            <p class="value">{{ $nama_kelas ?? 'Kelas Tidak Ditemukan' }}</p> <!-- Proper width for class -->
         </div>
     </div>
 
