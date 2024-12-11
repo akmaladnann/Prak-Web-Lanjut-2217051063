@@ -60,19 +60,19 @@
 <body>
 
     <div class="card">
-        <img src="https://i.pinimg.com/736x/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.jpg" alt="Avatar">
-        
+    <img  src="{{ asset($user->foto?? 'assets/img') }}" class="card-img-top" alt="">
+    <h1>Profil User</h1>
         <div class="info">
             <p class="label">Nama :</p>
-            <p class="value">{{ $nama }}</p> <!-- Proper width for name field -->
+            <p class="value">{{$user->nama }}</p> <!-- Proper width for name field -->
         </div>
         <div class="info">
             <p class="label">NPM    :</p>
-            <p class="value">{{ $npm }}</p> <!-- Proper width for NPM -->
+            <p class="value">{{ $user->npm }}</p> <!-- Proper width for NPM -->
         </div>
         <div class="info">
             <p class="label">Kelas :</p>
-            <p class="value">{{ $nama_kelas ?? 'Kelas Tidak Ditemukan' }}</p> <!-- Proper width for class -->
+            <p class="value">{{ $user->nama_kelas ?? 'Kelas Tidak Ditemukan' }}</p> <!-- Proper width for class -->
         </div>
     </div>
 

@@ -93,7 +93,7 @@
 
 </head>
 <div class="card">
-    <form action="{{ route('user.store') }}" method="POST">
+    <form action="{{ route('user.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <label for="nama">Nama:</label>
         <input type="text" id="nama" name="nama">
@@ -113,6 +113,9 @@
             <option value="{{ $kelasItem->id }}"> {{ $kelasItem->nama_kelas }}</option>
             @endforeach
         </select>
+
+        <label for="foto">Foto : </label>
+        <input type="file" id="foto" name="foto"><br><br>
         <button type="submit">Submit</button>
     </form>
 </div>
